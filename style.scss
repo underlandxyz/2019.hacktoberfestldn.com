@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+$text: white;
+$grey: #99A1B3;
+$purple: #A11EC6;
+$dark-purple: #610C5C;
+$background: #112148;
+$background-2: #351B55;
+$yellow: #FFF922;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+.w {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, $background, $background-2);
+  min-height: 100vh;
+  color: $grey;
+  line-height: 2;
+}
+
+#hero {
+  margin-top: 4em;
+  position: relative;
+  padding-bottom: 15em;
+  h1 {
+    font-size: 1.65em;
+    text-align: center;
+    color: white;
+    margin: 0.75rem 0;
+  }
+  .w {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skyline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  a.cta {
+    text-align: center;
+    display: inline-block;
+    background: $purple;
+    padding: 0.75em 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-top: 4em;
+    font-size: 1.25em;
+  }
+  h2 {
+    color: white;
+    margin-top: 2em;
+  }
+}
+
+#sponsors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#what {
+  color: $grey;
+  margin-bottom: 4em;
+  h2 {
+    color: white;
+  }
+  p {
+    margin-top: 1em;
+  }
+  a {
+    color: $yellow;
+  }
+}
+
+#organisers {
+  color: $grey;
+  margin-bottom: 4em;
+  h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .people {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    .person {
+      img {
+
+      }
+      h3 {
+        color: white;
+      }
+      p {
+        font-size: 0.85em;
+        line-height: 1.5;
+        margin-top: 0.8rem;
+      }
+      a {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+#more {
+  color: $grey;
+  margin-bottom: 4em;
+  h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color: white;
+  }
+  .event {
+    margin-top: 1.5em;
+    a {
+      color: $purple;
+    }
+  }
+}
+
+#signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .cta {
+    margin-bottom: 4rem;
+    text-align: center;
+    display: inline-block;
+    background: $purple;
+    padding: 0.75em 1.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #hero {
+    padding-bottom: 10vw;
+    h1 {
+      font-size: 1.25em;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  #sponsors {
+    grid-gap: 0;
+  }
+  #what,
+  #organisers,
+  #more {
+    h2 {
+      font-size: 1.25rem;
+    }
+    p, a {
+      font-size: 0.8rem;
+    }
+  }
+  #organisers {
+    .people {
+      grid-template-columns: 1fr;
+    }
+  }
+  a.cta {
+    margin-top: 2em !important;
+    padding: 0.5em 1em !important;
+    font-size: 1em !important;
+  }
+}

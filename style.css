@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+.w {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#112148), to(#351B55));
+  background-image: linear-gradient(to bottom right, #112148, #351B55);
+  min-height: 100vh;
+  color: #99A1B3;
+  line-height: 2;
+}
+
+#hero {
+  margin-top: 4em;
+  position: relative;
+  padding-bottom: 15em;
+}
+
+#hero h1 {
+  font-size: 1.65em;
+  text-align: center;
+  color: white;
+  margin: 0.75rem 0;
+}
+
+#hero .w {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero #skyline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#hero a.cta {
+  text-align: center;
+  display: inline-block;
+  background: #A11EC6;
+  padding: 0.75em 1.5em;
+  color: white;
+  text-decoration: none;
+  margin-top: 4em;
+  font-size: 1.25em;
+}
+
+#hero h2 {
+  color: white;
+  margin-top: 2em;
+}
+
+#sponsors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#what {
+  color: #99A1B3;
+  margin-bottom: 4em;
+}
+
+#what h2 {
+  color: white;
+}
+
+#what p {
+  margin-top: 1em;
+}
+
+#what a {
+  color: #FFF922;
+}
+
+#organisers {
+  color: #99A1B3;
+  margin-bottom: 4em;
+}
+
+#organisers h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#organisers .people {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+#organisers .people .person h3 {
+  color: white;
+}
+
+#organisers .people .person p {
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin-top: 0.8rem;
+}
+
+#organisers .people .person a {
+  color: #FFF922;
+}
+
+#more {
+  color: #99A1B3;
+  margin-bottom: 4em;
+}
+
+#more h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#more h3 {
+  color: white;
+}
+
+#more .event {
+  margin-top: 1.5em;
+}
+
+#more .event a {
+  color: #A11EC6;
+}
+
+#signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#signup .cta {
+  margin-bottom: 4rem;
+  text-align: center;
+  display: inline-block;
+  background: #A11EC6;
+  padding: 0.75em 1.5em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 760px) {
+  #hero {
+    padding-bottom: 10vw;
+  }
+  #hero h1 {
+    font-size: 1.25em;
+  }
+  #hero h2 {
+    font-size: 1rem;
+  }
+  #sponsors {
+    grid-gap: 0;
+  }
+  #what h2,
+  #organisers h2,
+  #more h2 {
+    font-size: 1.25rem;
+  }
+  #what p, #what a,
+  #organisers p,
+  #organisers a,
+  #more p,
+  #more a {
+    font-size: 0.8rem;
+  }
+  #organisers .people {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  a.cta {
+    margin-top: 2em !important;
+    padding: 0.5em 1em !important;
+    font-size: 1em !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
