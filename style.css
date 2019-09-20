@@ -77,6 +77,11 @@ body {
   margin-top: 2em;
 }
 
+#hero h2 a {
+  color: #FFF922;
+  margin: 0 0.5em;
+}
+
 #sponsors {
   display: -ms-grid;
   display: grid;
